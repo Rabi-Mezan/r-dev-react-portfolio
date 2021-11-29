@@ -1,0 +1,11 @@
+.banner-page{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #111111;
+}
+
+.propic{
+    height: 713px;
+    width: 713px;
+}
