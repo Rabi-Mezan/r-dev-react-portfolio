@@ -31,27 +31,25 @@ const Landing = () => {
                     <h1 className='lg:text-5xl lg:text-left font-bold text-white'>HI, I'M A FRONTEND <br />
                         <span style={{ color: '#FFB400' }} className='lg:text-6xl font-extrabold text-white'>DEVELOPER</span>
                     </h1>
-                    <button style={{ border: '2px solid #FFB400 ' }} className='rounded-full lg:my-5 lg:w-2/3 w-2/4  h-12 hover:bg-yellow-400 hover:text-black hover:scale-105 transition transform duration-500 text-white text-xl font-semibold flex  justify-between px-2 items-center'>My Resume <span style={{ color: 'black' }}><i class="fas fa-arrow-right bg-yellow-400  w-10  h-10 p-2 rounded-full"></i></span></button>
+                    <button style={{ border: '2px solid #FFB400 ' }} className='rounded-full lg:my-5 m-auto  lg:w-96 w-60  h-12 hover:bg-yellow-400 hover:text-black hover:scale-105 transition transform duration-500 text-white text-xl font-semibold flex  justify-between px-2 items-center'>My Resume <span style={{ color: 'black' }}><i class="fas fa-arrow-right bg-yellow-400  w-10  h-10 p-2 rounded-full"></i></span></button>
                 </div>
-                <div data-aos="fade-left"
-                    data-aos-offset="200"
-                    data-aos-delay="50"
-                    data-aos-duration="3000"
-                    data-aos-easing="ease-in"
+                <div
                     className='flex flex-col justify-around items-center '>
-                    <img className='w-16 h-16 flex  ml-auto ' src={logo} alt="" />
-                    <Link to='/home'>
-                        <i class="fas fa-home mt-5 flex items-center justify-center  bg-yellow-400 w-10  h-10 p-2 rounded-full hover:scale-105 transition transform duration-500 hover:bg-green-400 hover:text-white"> </i>
-                    </Link>
-                    <Link to='/about'>
-                        <i class="fas fa-user mt-5 flex items-center justify-center bg-yellow-400 w-10  h-10 p-2 rounded-full hover:scale-105 transition transform duration-500 hover:bg-green-400 hover:text-white"></i>
-                    </Link>
-                    <Link to='/project'>
-                        <i class="fas fa-briefcase flex items-center justify-center mt-5 bg-yellow-400 w-10  h-10 p-2 rounded-full hover:scale-105 transition transform duration-500 hover:bg-green-400 hover:text-white"></i>
-                    </Link>
-                    <Link to='/contact'>
-                        <i class="fas fa-envelope flex items-center justify-center mt-5 bg-yellow-400 w-10  h-10 p-2 rounded-full hover:scale-105 transition transform duration-500 hover:bg-green-400 hover:text-white"></i>
-                    </Link>
+                    <img className='w-16 h-16 flex  lg:ml-auto ' src={logo} alt="" />
+                    <div className='flex lg:flex-col flex-row'>
+                        <Link to='/home'>
+                            <i class="fas fa-home mt-5 mr-2 flex items-center justify-center  bg-yellow-400 w-10  h-10 p-2 rounded-full hover:scale-105 transition transform duration-500 hover:bg-green-400 hover:text-white"> </i>
+                        </Link>
+                        <Link to='/about'>
+                            <i class="fas fa-user mt-5 mr-2 flex items-center justify-center bg-yellow-400 w-10  h-10 p-2 rounded-full hover:scale-105 transition transform duration-500 hover:bg-green-400 hover:text-white"></i>
+                        </Link>
+                        <Link to='/project'>
+                            <i class="fas fa-briefcase flex items-center justify-center mt-5 mr-2 bg-yellow-400 w-10  h-10 p-2 rounded-full hover:scale-105 transition transform duration-500 hover:bg-green-400 hover:text-white"></i>
+                        </Link>
+                        <Link to='/contact'>
+                            <i class="fas fa-envelope flex items-center justify-center mt-5  bg-yellow-400 w-10  h-10 p-2 rounded-full hover:scale-105 transition transform duration-500 hover:bg-green-400 hover:text-white"></i>
+                        </Link>
+                    </div>
                 </div>
             </div>
         </div>
