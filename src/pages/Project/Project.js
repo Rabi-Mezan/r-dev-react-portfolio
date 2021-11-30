@@ -2,14 +2,25 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import './Project.css'
 import logo from '../../images/R.dev.png'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
+
+
 const Project = () => {
     return (
         <div style={{ backgroundColor: '#111111' }} className='min-h-screen'>
             <h1 className='lg:text-5xl text-center font-bold text-white py-10'>My <span style={{ color: '#FFB400' }} className=' font-extrabold text-white'>PORTFOLIO</span>
             </h1>
-            <div className=' flex  justify-around items-center'>
+            <div className=' flex  justify-around items-start'>
                 <div style={{ width: '700px' }} className='grid  gap-2  grid-cols-1 place-content-center '>
-                    <div >
+                    <div
+                        data-aos="fade-right"
+                        data-aos-offset="200"
+                        data-aos-delay="50"
+                        data-aos-duration="1000"
+                        data-aos-easing="ease-in"
+                    >
                         <div class="flex  antialiased">
                             <div class="relative m-auto">
                                 <div class="z-50 p-3 mt-10 max-w-xs w-xs grid grid-cols-1 cursor-default select-none rounded bg-gray-400 dark:bg-gray-900 shadow-lg">
@@ -48,7 +59,13 @@ const Project = () => {
                         </div>
                     </div>
                     <hr className='my-5' />
-                    <div>
+                    <div
+                        data-aos="fade-right"
+                        data-aos-offset="200"
+                        data-aos-delay="50"
+                        data-aos-duration="1000"
+                        data-aos-easing="ease-in"
+                    >
                         <div class="flex  antialiased">
                             <div class="relative m-auto">
                                 <div class="z-50 p-3 mt-10 max-w-xs w-xs grid grid-cols-1 cursor-default select-none rounded bg-gray-400 dark:bg-gray-900 shadow-lg">
@@ -87,7 +104,11 @@ const Project = () => {
                         </div>
                     </div>
                     <hr className='my-5' />
-                    <div>
+                    <div data-aos="fade-right"
+                        data-aos-offset="200"
+                        data-aos-delay="50"
+                        data-aos-duration="1000"
+                        data-aos-easing="ease-in">
                         <div class="flex  antialiased">
                             <div class="relative m-auto">
                                 <div class="z-50 p-3 mt-10 max-w-xs w-xs grid grid-cols-1 cursor-default select-none rounded bg-gray-400 dark:bg-gray-900 shadow-lg">
