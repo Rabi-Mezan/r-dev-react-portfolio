@@ -3,6 +3,8 @@ import { CircularProgressbar } from 'react-circular-progressbar';
 import { Link } from 'react-router-dom';
 import logo from '../../images/R.dev.png'
 import 'react-circular-progressbar/dist/styles.css';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 
 const About = () => {
@@ -48,13 +50,20 @@ const About = () => {
                     <div className='w-3/4 m-auto text-left '>
                         <h1 className='lg:text-2xl  font-bold text-white py-10'>MYSELF <br /> <span style={{ color: '#FFB400' }} className=' lg:text-5xl text-2xl font-extrabold text-white'> RABIUL ISLAM</span> </h1>
                         <p className='text-sm text-white -mt-8'>FRONTEND DEVELOPER , UI DESIGNER</p>
+                        <p className='text-xs text-white w-2/3 my-2'>I'm a student of Computer science and Engineering and pursuing my BSc degree at Daffodil International University. I want to become a full-stack web developer</p>
                         <a href="https://drive.google.com/file/d/1QX5gJPq1JUjYlb21SF4tEPSk0XQyP-o7/view?usp=sharing" target='_blank' rel="noreferrer">
                             <button style={{ border: '2px solid #FFB400 ' }} className='rounded-full my-5 m-auto lg:ml-2   lg:w-1/2 w-60  h-12 hover:bg-yellow-400 hover:text-black hover:scale-105 transition transform duration-500 text-white text-xl font-semibold flex  justify-between px-2 items-center'>My Resume <span style={{ color: 'black' }}><i class="fas fa-arrow-right bg-yellow-400  w-10  h-10 p-2 rounded-full"></i></span>
                             </button>
                         </a>
                     </div>
 
-                    <div className=' mt-20 flex flex-col justify-center items-center'>
+                    <div
+                        data-aos="fade-right"
+                        data-aos-offset="200"
+                        data-aos-delay="50"
+                        data-aos-duration="1000"
+                        data-aos-easing="ease-in"
+                        className=' mt-20 flex flex-col justify-center items-center'>
                         <h1 style={{ color: '#FFB400' }} className=' lg:text-5xl text-2xl my-8 font-extrabold text-white'>MY HISTORY</h1>
                         <div className='w-3/4 grid lg:grid-cols-2 grid-col-1 gap-4 m-auto'>
 
@@ -101,9 +110,15 @@ const About = () => {
 
                         </div>
                     </div>
-                    <div className='flex flex-col justify-center items-center'>
-                        <h1 style={{ color: '#FFB400' }} className=' lg:text-5xl text-2xl my-8 font-extrabold text-white'>MY SKILSS</h1>
-                        <div className='grid lg:grid-cols-4 grid-cols-2'>
+                    <div
+                        data-aos="fade-right"
+                        data-aos-offset="200"
+                        data-aos-delay="50"
+                        data-aos-duration="1000"
+                        data-aos-easing="ease-in"
+                        className='flex flex-col justify-center items-center 3/4'>
+                        <h1 style={{ color: '#FFB400' }} className=' lg:text-5xl text-2xl my-8 font-extrabold text-white'>MY SKILLS</h1>
+                        <div className='grid lg:grid-cols-4 grid-cols-3'>
 
                             <div className='lg:p-10 p-4'>
                                 <CircularProgressbar
@@ -168,6 +183,9 @@ const About = () => {
                     </Link>
                     <Link to='/project'>
                         <i class="fas fa-briefcase flex items-center justify-center mt-5 bg-yellow-400 w-10  h-10 p-2 rounded-full hover:scale-105 transition transform duration-500 hover:bg-green-400 hover:text-white"></i>
+                    </Link>
+                    <Link to='/blogs'>
+                        <i class="fas fa-file-alt flex items-center justify-center mt-5  bg-yellow-400 w-10  h-10 p-2 rounded-full hover:scale-105 transition transform duration-500 hover:bg-green-400 hover:text-white"></i>
                     </Link>
                     <Link to='/contact'>
                         <i class="fas fa-envelope flex items-center justify-center mt-5 bg-yellow-400 w-10  h-10 p-2 rounded-full hover:scale-105 transition transform duration-500 hover:bg-green-400 hover:text-white"></i>

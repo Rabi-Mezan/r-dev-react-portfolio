@@ -8,6 +8,8 @@ import Project from './pages/Project/Project';
 
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
+import Details from './pages/Details/Details';
+import Blogs from './pages/Blogs/Blogs';
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 
@@ -44,6 +46,12 @@ function App() {
           </Route>
           <Route path='/contact'>
             <Contact></Contact>
+          </Route>
+          <Route path='/details'>
+            <Details></Details>
+          </Route>
+          <Route path='/blogs'>
+            <Blogs></Blogs>
           </Route>
         </Switch>
       </BrowserRouter>

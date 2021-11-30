@@ -69,21 +69,24 @@ const Contact = () => {
                     </div>
                 </div>
 
-                <form ref={form} onSubmit={sendEmail} style={{ width: '550px' }} className='flex flex-col justify-center  '>
-                    <div className='flex justify-center items-center '>
-                        <input name="user_name" placeholder='Your Name' className='lg:w-1/2 w-1/4 lg:h-14 h-10 rounded-full  hover:border-2 border-yellow-400 mr-2 p-4 bg-gray-600' type="text" />
-                        <input name="user_email" placeholder='Your Email' className='lg:w-1/2 w-1/4 lg:h-14 h-10 rounded-full  hover:border-2 bg-gray-600  border-yellow-400 lg:p-4 px-5 text' type="email" />
+                <form ref={form} onSubmit={sendEmail} className='flex flex-col justify-center  '>
+                    <div className='flex flex-col lg:p-0 p-5 '>
+                        <div className='flex justify-center items-center w-full '>
+                            <input name="user_name" placeholder='Your Name' className='w-1/2  lg:h-14 h-10 rounded-full  hover:border-2 border-yellow-400 mr-2 p-4 bg-gray-600' type="text" />
+                            <input name="user_email" placeholder='Your Email' className='w-1/2  lg:h-14 h-10 rounded-full  hover:border-2 bg-gray-600  border-yellow-400 lg:p-4 px-5 text' type="email" />
+                        </div>
+                        <textarea name="message" placeholder='Your Message' className='w-full  m-auto hover:border-2  rounded-lg my-5 bg-gray-600  p-4' id="" cols="10" rows="5"></textarea>
                     </div>
                     <div className=' m-auto w-full '>
-                        <textarea name="message" placeholder='Your Message' className='w-full m-auto hover:border-2  rounded-lg my-5 bg-gray-600  p-4' id="" cols="10" rows="5"></textarea>
+
                         <button type='submit' style={{ border: '2px solid #FFB400 ' }} className='rounded-full lg:my-5 lg:w-full w-2/4 m-auto mb-10  h-12 hover:bg-yellow-400 hover:text-black hover:scale-105 transition transform duration-500 text-white text-sm font-semibold flex  justify-between px-2 items-center'>SEND MASSAGE <span style={{ color: 'black' }}><i class="fas fa-paper-plane bg-yellow-400  w-10  h-10 p-2 rounded-full flex items-center justify-center"></i></span></button>
                     </div>
                 </form>
 
                 <div
-                    className=' flex lg:order-last my-5 order-first  flex-col justify-around items-center  lg:-mt-30'>
+                    className=' flex lg:order-last my-5 order-first  flex-col justify-around items-center  lg:-mt-60'>
                     <img className='w-16 h-16 flex  lg:ml-auto ' src={logo} alt="" />
-                    <div className='flex lg:flex-col flex-row'>
+                    <div className='flex lg:flex-col flex-row text-black'>
                         <Link to='/home'>
                             <i class="fas fa-home mt-5 mr-2 flex items-center justify-center  bg-yellow-400 w-10  h-10 p-2 rounded-full hover:scale-105 transition transform duration-500 hover:bg-green-400 hover:text-white"> </i>
                         </Link>
@@ -92,6 +95,9 @@ const Contact = () => {
                         </Link>
                         <Link to='/project'>
                             <i class="fas fa-briefcase flex items-center justify-center mt-5 mr-2 bg-yellow-400 w-10  h-10 p-2 rounded-full hover:scale-105 transition transform duration-500 hover:bg-green-400 hover:text-white"></i>
+                        </Link>
+                        <Link to='/blogs'>
+                            <i class="fas fa-file-alt flex items-center justify-center mt-5 mr-2 bg-yellow-400 w-10  h-10 p-2 rounded-full hover:scale-105 transition transform duration-500 hover:bg-green-400 hover:text-white"></i>
                         </Link>
                         <Link to='/contact'>
                             <i class="fas fa-envelope flex items-center justify-center mt-5  bg-yellow-400 w-10  h-10 p-2 rounded-full hover:scale-105 transition transform duration-500 hover:bg-green-400 hover:text-white"></i>
