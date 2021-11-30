@@ -8,7 +8,7 @@ const Project = () => {
             <h1 className='lg:text-5xl text-center font-bold text-white py-10'>My <span style={{ color: '#FFB400' }} className=' font-extrabold text-white'>PORTFOLIO</span>
             </h1>
             <div className=' flex  justify-around items-center'>
-                <div style={{ width: '700px' }} className='grid lg:grid-cols-3 gap-2  grid-cols-1 place-content-center '>
+                <div style={{ width: '700px' }} className='grid  gap-2  grid-cols-1 place-content-center '>
                     <div >
                         <div class="flex  antialiased">
                             <div class="relative m-auto">
@@ -40,13 +40,14 @@ const Project = () => {
                                         </div>
                                     </div>
                                 </div>
-                                {/* <img
+                                <img
                                     class="absolute z-0 mx-72 -my-56 h-50 max-w-xs w-xl object-cover object-top hover:bg-opacity-50 transform hover:scale-125 border-gray-600 border border-opacity-50 rounded-xl shadow-lg transition-all duration-150"
                                     src="https://i.ibb.co/WfB4Xbz/heaventrip.png" alt=''>
-                                </img> */}
+                                </img>
                             </div>
                         </div>
                     </div>
+                    <hr className='my-5' />
                     <div>
                         <div class="flex  antialiased">
                             <div class="relative m-auto">
@@ -78,13 +79,14 @@ const Project = () => {
                                         </div>
                                     </div>
                                 </div>
-                                {/* <img
+                                <img
                                     class="absolute z-0 mx-72 -my-56 h-50 max-w-xs w-xl object-cover object-top hover:bg-opacity-50 transform hover:scale-125 border-gray-600 border border-opacity-50 rounded-xl shadow-lg transition-all duration-150"
                                     src="https://i.ibb.co/5M00Ldz/flash.png" alt=''>
-                                </img> */}
+                                </img>
                             </div>
                         </div>
                     </div>
+                    <hr className='my-5' />
                     <div>
                         <div class="flex  antialiased">
                             <div class="relative m-auto">
@@ -111,15 +113,14 @@ const Project = () => {
                                             <span class="transform transition-all duration-150 inline-block bg-blue-400 bg-opacity-75 rounded px-1 py-1 text-xs font-thin text-blue-900  hover:shadow-sm  hover:scale-105">ReactJS</span>
                                             <span class="transform transition-all duration-150 inline-block bg-pink-400 bg-opacity-100 rounded px-1 py-1  text-xs font-thin text-pink-900  hover:shadow-sm  hover:scale-105">Tailwind</span>
                                             <span class="transform transition-all duration-150 inline-block bg-yellow-400  bg-opacity-75 rounded px-1 py-1  text-xs font-thin text-yellow-900 hover:shadow-sm  hover:scale-105">Javascript</span>
-                                            <span class="transform transition-all duration-150 inline-block bg-green-400  bg-opacity-75 rounded px-1 py-1  text-xs font-thin text-yellow-900 hover:shadow-sm  hover:scale-105">NodeJS</span>
-                                            <span class="transform transition-all duration-150 inline-block bg-indigo-400  bg-opacity-75 rounded px-1 py-1  text-xs font-thin text-yellow-900 hover:shadow-sm  hover:scale-105">MongoDB</span>
+
                                         </div>
                                     </div>
                                 </div>
-                                {/* <img
+                                <img
                                     class="absolute z-0 mx-72 -my-56 h-50 max-w-xs w-xl object-cover object-top hover:bg-opacity-50 transform hover:scale-125 border-gray-600 border border-opacity-50 rounded-xl shadow-lg transition-all duration-150"
-                                    src="https://camo.githubusercontent.com/78889a2ff752043bd00ea43b0dc9fb85b8818345e190b2af5ce4d4eff307db64/68747470733a2f2f692e696d6775722e636f6d2f645744334449522e6a7067" alt=''>
-                                </img> */}
+                                    src="https://i.ibb.co/Swhv0J2/mindcore.png" alt=''>
+                                </img>
                             </div>
                         </div>
                     </div>
@@ -128,7 +129,7 @@ const Project = () => {
                 </div>
 
                 <div
-                    className='flex flex-col  justify-around items-center text-black '>
+                    className='flex flex-col  justify-around items-center text-black  '>
                     <img className='w-16 h-16 flex  ml-auto ' src={logo} alt="" />
                     <Link to='/home'>
                         <i class="fas fa-home mt-5 flex items-center justify-center  bg-yellow-400 w-10  h-10 p-2 rounded-full hover:scale-105 transition transform duration-500 hover:bg-green-400 hover:text-white"> </i>

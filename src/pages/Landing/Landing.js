@@ -12,7 +12,7 @@ const Landing = () => {
     return (
         <div style={{ backgroundColor: '#111111' }}>
 
-            <div className="banner-page min-h-screen">
+            <div className="banner-page h-screen">
                 <div data-aos="fade-right"
                     data-aos-offset="200"
                     data-aos-delay="50"
@@ -27,14 +27,20 @@ const Landing = () => {
                     data-aos-delay="50"
                     data-aos-duration="2000"
                     data-aos-easing="ease-in"
-                    style={{ width: '400px' }} className='flex flex-col justify-item-start'>
-                    <h1 className='lg:text-5xl lg:text-left font-bold text-white'>HI, I'M A FRONTEND <br />
+                    style={{ width: '400px' }} className='flex flex-col lg:justify-item-start justify-center'>
+                    <h1 className='lg:text-5xl lg:text-left font-bold text-white my-2'>HI, I'M A FRONTEND <br />
                         <span style={{ color: '#FFB400' }} className='lg:text-6xl font-extrabold text-white'>DEVELOPER</span>
                     </h1>
-                    <button style={{ border: '2px solid #FFB400 ' }} className='rounded-full lg:my-5 m-auto  lg:w-96 w-60  h-12 hover:bg-yellow-400 hover:text-black hover:scale-105 transition transform duration-500 text-white text-xl font-semibold flex  justify-between px-2 items-center'>My Resume <span style={{ color: 'black' }}><i class="fas fa-arrow-right bg-yellow-400  w-10  h-10 p-2 rounded-full"></i></span></button>
+                    <div className='w-full lg:flex'>
+                        <Link to='/about' style={{ border: '2px solid #FFB400 ' }} className='rounded-full my-5 m-auto   lg:w-1/2 w-60  h-12 hover:bg-yellow-400 hover:text-black hover:scale-105 transition transform duration-500 text-white text-xl font-semibold flex  justify-between px-2 items-center'>Know More<span style={{ color: 'black' }}><i class="fas fa-arrow-right bg-yellow-400  w-10  h-10 p-2 rounded-full"></i></span></Link>
+                        <a href="https://drive.google.com/file/d/1QX5gJPq1JUjYlb21SF4tEPSk0XQyP-o7/view?usp=sharing" target='_blank' rel="noreferrer">
+                            <button style={{ border: '2px solid #FFB400 ' }} className='rounded-full lg:my-5 m-auto lg:ml-2   lg:w-full w-60  h-12 hover:bg-yellow-400 hover:text-black hover:scale-105 transition transform duration-500 text-white text-xl font-semibold flex  justify-between px-2 items-center'>My Resume <span style={{ color: 'black' }}><i class="fas fa-arrow-right bg-yellow-400  w-10  h-10 p-2 rounded-full"></i></span>
+                            </button>
+                        </a>
+                    </div>
                 </div>
                 <div
-                    className='flex flex-col justify-around items-center '>
+                    className=' flex mb-5  flex-col justify-around items-center '>
                     <img className='w-16 h-16 flex  lg:ml-auto ' src={logo} alt="" />
                     <div className='flex lg:flex-col flex-row'>
                         <Link to='/home'>
