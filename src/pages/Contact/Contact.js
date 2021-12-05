@@ -23,12 +23,12 @@ const Contact = () => {
 
     return (
         <div style={{ backgroundColor: '#111111' }}>
-            <h1 className='lg:text-5xl text-center font-bold text-white py-10'>GET IN <span style={{ color: '#FFB400' }} className=' font-extrabold text-white'>TOUCH</span>
+            <h1 className='lg:text-5xl text-2xl text-center font-bold text-white py-10'>GET IN <span style={{ color: '#FFB400' }} className=' font-extrabold text-white'>TOUCH</span>
             </h1>
             <div className='contact-page  min-h-screen text-white text-left'>
-                <div style={{ width: '300px' }} className='text-left lg:w-1/2 w-full lg:p-0 p-5 '>
-                    <h1 className='lg:text-2xl font-bold mb-3'>FEEL FREE TO CONTACT !</h1>
-                    <p className=''>Feel free to get in touch with me. I am always open to discussing new projects, creative ideas or opportunities to be part of your visions.</p>
+                <div style={{ width: '350px' }} className='text-left lg:w-auto w-full lg:p-0 p-5 '>
+                    <h1 className='lg:text-3xl font-bold mb-3'>FEEL FREE TO CONTACT !</h1>
+                    <p className='text-sm'>Feel free to get in touch with me. I am always open to discussing new projects, creative ideas or opportunities to be part of your visions.</p>
                     <div>
                         <div className='flex items-center my-4'>
                             <i class="fas fa-envelope text-4xl text-yellow-400 mr-3"></i>
@@ -45,7 +45,7 @@ const Contact = () => {
                             </div>
                         </div>
                     </div>
-                    <div className='my-5'>
+                    <div className='my-3'>
                         <a href="https://github.com/Rabi-Mezan">
                             <button >
                                 <i class="fab fa-github flex items-center justify-center mt-5 bg-gray-600 w-10  h-10 p-2 rounded-full hover:scale-105 transition transform duration-500 hover:bg-yellow-400 hover:text-black mr-3"></i>
@@ -69,7 +69,7 @@ const Contact = () => {
                     </div>
                 </div>
 
-                <form ref={form} onSubmit={sendEmail} className='flex flex-col justify-center  '>
+                <form ref={form} onSubmit={sendEmail} className='flex flex-col justify-center lg:px-0 px-2 '>
                     <div className='flex flex-col lg:p-0 p-5 '>
                         <div className='flex justify-center items-center w-full '>
                             <input name="user_name" placeholder='Your Name' className='w-1/2  lg:h-14 h-10 rounded-full  hover:border-2 border-yellow-400 mr-2 p-4 bg-gray-600' type="text" />
@@ -79,7 +79,7 @@ const Contact = () => {
                     </div>
                     <div className=' m-auto w-full '>
 
-                        <button type='submit' style={{ border: '2px solid #FFB400 ' }} className='rounded-full lg:my-5 lg:w-full w-2/4 m-auto mb-10  h-12 hover:bg-yellow-400 hover:text-black hover:scale-105 transition transform duration-500 text-white text-sm font-semibold flex  justify-between px-2 items-center'>SEND MASSAGE <span style={{ color: 'black' }}><i class="fas fa-paper-plane bg-yellow-400  w-10  h-10 p-2 rounded-full flex items-center justify-center"></i></span></button>
+                        <button type='submit' style={{ border: '2px solid #FFB400 ' }} className='rounded-full lg:my-5 lg:w-full w-3/4 m-auto mb-10  h-12 hover:bg-yellow-400 hover:text-black hover:scale-105 transition transform duration-500 text-white text-sm font-semibold flex  justify-between px-2 items-center'>SEND MASSAGE <span style={{ color: 'black' }}><i class="fas fa-paper-plane bg-yellow-400  w-10  h-10 p-2 rounded-full flex items-center justify-center"></i></span></button>
                     </div>
                 </form>
 

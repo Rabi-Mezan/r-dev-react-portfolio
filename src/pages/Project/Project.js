@@ -10,10 +10,10 @@ import 'aos/dist/aos.css';
 const Project = () => {
     return (
         <div style={{ backgroundColor: '#111111' }} className='min-h-screen pb-5'>
-            <h1 className='lg:text-5xl text-center font-bold text-white py-10'>My <span style={{ color: '#FFB400' }} className=' font-extrabold text-white'>PORTFOLIO</span>
+            <h1 className='lg:text-5xl text-2xl text-center font-bold text-white py-10'>My <span style={{ color: '#FFB400' }} className=' font-extrabold text-white'>PROJECTS</span>
             </h1>
-            <div className=' flex  justify-around items-start mt-10'>
-                <div style={{ width: '700px' }} className='grid  gap-2  grid-cols-1 place-content-center '>
+            <div className='flex flex-col lg:flex-row  justify-around lg:items-start  items-center my-10'>
+                <div className='grid  gap-2  grid-cols-1 place-content-center '>
                     <div
                         data-aos="fade-right"
                         data-aos-offset="200"
@@ -175,11 +175,11 @@ const Project = () => {
                                 <div class="z-50 p-3 mt-10 max-w-xs w-xs grid grid-cols-1 cursor-default select-none rounded bg-gray-400 dark:bg-gray-900 shadow-lg">
                                     <div class="font-semibold text-xl mb-2 ml-2 text-gray-900 dark:text-white">Click69</div>
                                     <div class="flex">
-                                        <a href="https://615b003ab5a2d116219f82b0--69click.netlify.app/home">
+                                        <a href="https://github.com/Rabi-Mezan/click69-click-with-us">
                                             <button
                                                 class="transform mouse-pointer bg-gray-900 text-sm text-white mx-2 py-1 px-2 font-semibold rounded hover:bg-gray-700 dark:hover:bg-gray-600 hover:scale-90   focus:bg-gray-700 dark:focus:bg-gray-600 focus:outline-none">Live</button>
                                         </a>
-                                        <a href="https://github.com/Rabi-Mezan/MindCore-Helath_website">
+                                        <a href="https://github.com/Rabi-Mezan/click69-click-with-us">
                                             <button
                                                 class="transform mouse-pointer bg-gray-900 text-sm text-white px-2 font-semibold rounded hover:bg-gray-700 dark:hover:bg-gray-600  hover:scale-90 dark:focus:bg-gray-600 focus:outline-none">Code</button>
                                         </a>
@@ -218,23 +218,25 @@ const Project = () => {
                 </div>
 
                 <div
-                    className='flex flex-col  justify-around items-center text-black  '>
-                    <img className='w-16 h-16 flex  ml-auto ' src={logo} alt="" />
-                    <Link to='/home'>
-                        <i class="fas fa-home mt-5 flex items-center justify-center  bg-yellow-400 w-10  h-10 p-2 rounded-full hover:scale-105 transition transform duration-500 hover:bg-green-400 hover:text-white"> </i>
-                    </Link>
-                    <Link to='/about'>
-                        <i class="fas fa-user mt-5 flex items-center justify-center bg-yellow-400 w-10  h-10 p-2 rounded-full hover:scale-105 transition transform duration-500 hover:bg-green-400 hover:text-white"></i>
-                    </Link>
-                    <Link to='/project'>
-                        <i class="fas fa-briefcase flex items-center justify-center mt-5 bg-yellow-400 w-10  h-10 p-2 rounded-full hover:scale-105 transition transform duration-500 hover:bg-green-400 hover:text-white"></i>
-                    </Link>
-                    <Link to='/blogs'>
-                        <i class="fas fa-file-alt flex items-center justify-center mt-5  bg-yellow-400 w-10  h-10 p-2 rounded-full hover:scale-105 transition transform duration-500 hover:bg-green-400 hover:text-white"></i>
-                    </Link>
-                    <Link to='/contact'>
-                        <i class="fas fa-envelope flex items-center justify-center mt-5 bg-yellow-400 w-10  h-10 p-2 rounded-full hover:scale-105 transition transform duration-500 hover:bg-green-400 hover:text-white"></i>
-                    </Link>
+                    className=' flex mb-5 order-first lg:order-last  flex-col justify-around items-center '>
+                    <img className='w-16 h-16 flex  lg:ml-auto ' src={logo} alt="" />
+                    <div className='flex lg:flex-col flex-row'>
+                        <Link to='/home'>
+                            <i class="fas fa-home mt-5 mr-2 flex items-center justify-center  bg-yellow-400 w-10  h-10 p-2 rounded-full hover:scale-105 transition transform duration-500 hover:bg-green-400 hover:text-white"> </i>
+                        </Link>
+                        <Link to='/about'>
+                            <i class="fas fa-user mt-5 mr-2 flex items-center justify-center bg-yellow-400 w-10  h-10 p-2 rounded-full hover:scale-105 transition transform duration-500 hover:bg-green-400 hover:text-white"></i>
+                        </Link>
+                        <Link to='/project'>
+                            <i class="fas fa-briefcase flex items-center justify-center mt-5 mr-2 bg-yellow-400 w-10  h-10 p-2 rounded-full hover:scale-105 transition transform duration-500 hover:bg-green-400 hover:text-white"></i>
+                        </Link>
+                        <Link to='/blogs'>
+                            <i class="fas fa-file-alt flex items-center justify-center mt-5 mr-2 bg-yellow-400 w-10  h-10 p-2 rounded-full hover:scale-105 transition transform duration-500 hover:bg-green-400 hover:text-white"></i>
+                        </Link>
+                        <Link to='/contact'>
+                            <i class="fas fa-envelope flex items-center justify-center mt-5  bg-yellow-400 w-10  h-10 p-2 rounded-full hover:scale-105 transition transform duration-500 hover:bg-green-400 hover:text-white"></i>
+                        </Link>
+                    </div>
                 </div>
             </div>
         </div >
