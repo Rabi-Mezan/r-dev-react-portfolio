@@ -9,11 +9,18 @@ import 'aos/dist/aos.css';
 
 const Project = () => {
     return (
-        <div style={{ backgroundColor: '#111111' }} className='min-h-screen pb-5'>
-            <h1 className='lg:text-5xl text-2xl text-center font-bold text-white py-10'>My <span style={{ color: '#FFB400' }} className=' font-extrabold text-white'>PROJECTS</span>
+        <div id='projects' style={{ backgroundColor: '#111111' }} className='min-h-screen pb-5'>
+            <h1
+                data-aos="fade-out"
+                data-aos-offset="200"
+                data-aos-delay="50"
+                data-aos-duration="1000"
+                data-aos-easing="ease-in"
+
+                className='lg:bg-gray-500 lg:mx-40 lg:text-5xl text-2xl text-center font-bold text-white py-10'>MY <span style={{ color: '#FFB400' }} className=' font-extrabold text-white'>PROJECTS</span>
             </h1>
             <div className='flex flex-col lg:flex-row  justify-around lg:items-start  items-center my-10'>
-                <div className='grid  gap-2  grid-cols-1 place-content-center '>
+                <div className='grid  gap-2  grid-cols-1 place-content-center w-full'>
                     <div
                         data-aos="fade-right"
                         data-aos-offset="200"
@@ -21,9 +28,9 @@ const Project = () => {
                         data-aos-duration="1000"
                         data-aos-easing="ease-in"
                     >
-                        <div class="flex  antialiased">
+                        <div class="flex my-8 antialiased">
                             <div class="relative m-auto">
-                                <div class="z-50 p-3 mt-10 max-w-xs w-xs grid grid-cols-1 cursor-default select-none rounded bg-gray-400 dark:bg-gray-900 shadow-lg">
+                                <div class="z-50 p-3 mx-3 mt-10 lg:max-w-lg w-xs grid grid-cols-1 cursor-default select-none rounded bg-gray-400 dark:bg-gray-900 shadow-lg">
                                     <div class="font-semibold text-xl mb-2 ml-2 text-gray-900 dark:text-white">Heaven Trip</div>
                                     <div class="flex">
                                         <a href="https://heaven-trip-95a98.web.app/home">
@@ -57,14 +64,14 @@ const Project = () => {
                                         src="https://i.ibb.co/WfB4Xbz/heaventrip.png" alt=''>
                                     </img>
                                     <Link to='/details'>
-                                        <button style={{ border: '2px solid #FFB400 ' }} className='rounded-full lg:my-5 m-auto lg:ml-2   lg:w-2/3 w-1/3  h-12 hover:bg-yellow-400 hover:text-black hover:scale-105 transition transform duration-500 text-white lg:text-xl font-semibold my-3'>See Deatils
+                                        <button style={{ border: '2px solid #FFB400 ' }} className='rounded-full lg:my-5 m-auto lg:ml-2   lg:w-2/3 w-3/4 h-12 hover:bg-yellow-400 hover:text-black hover:scale-105 transition transform duration-500 text-white lg:text-xl font-semibold my-3'>See Deatils
                                         </button>
                                     </Link>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <hr className='my-5' />
+                    {/* <hr className='my-5' /> */}
                     <div
                         data-aos="fade-right"
                         data-aos-offset="200"
@@ -72,9 +79,9 @@ const Project = () => {
                         data-aos-duration="1000"
                         data-aos-easing="ease-in"
                     >
-                        <div class="flex  antialiased">
+                        <div class="flex my-8  antialiased">
                             <div class="relative m-auto">
-                                <div class="z-50 p-3 mt-10 max-w-xs w-xs grid grid-cols-1 cursor-default select-none rounded bg-gray-400 dark:bg-gray-900 shadow-lg">
+                                <div class="z-50 p-3 mx-3 mt-10 lg:max-w-lg w-xs grid grid-cols-1 cursor-default select-none rounded bg-gray-400 dark:bg-gray-900 shadow-lg">
                                     <div class="font-semibold text-xl mb-2 ml-2 text-gray-900 dark:text-white">Flash Corner</div>
                                     <div class="flex">
                                         <a href="https://flash-corner.web.app/">
@@ -108,7 +115,7 @@ const Project = () => {
                                         src="https://i.ibb.co/5M00Ldz/flash.png" alt=''>
                                     </img>
                                     <Link to='/details'>
-                                        <button style={{ border: '2px solid #FFB400 ' }} className='rounded-full lg:my-5 m-auto lg:ml-2   lg:w-2/3 w-1/3  h-12 hover:bg-yellow-400 hover:text-black hover:scale-105 transition transform duration-500 text-white lg:text-xl font-semibold my-3'>See Deatils
+                                        <button style={{ border: '2px solid #FFB400 ' }} className='rounded-full lg:my-5 m-auto lg:ml-2   lg:w-2/3 w-3/4 h-12 hover:bg-yellow-400 hover:text-black hover:scale-105 transition transform duration-500 text-white lg:text-xl font-semibold my-3'>See Deatils
                                         </button>
                                     </Link>
 
@@ -116,15 +123,15 @@ const Project = () => {
                             </div>
                         </div>
                     </div>
-                    <hr className='my-5' />
+                    {/* <hr className='my-5' /> */}
                     <div data-aos="fade-right"
                         data-aos-offset="200"
                         data-aos-delay="50"
                         data-aos-duration="1000"
                         data-aos-easing="ease-in">
-                        <div class="flex  antialiased">
+                        <div class="flex my-8 antialiased">
                             <div class="relative m-auto">
-                                <div class="z-50 p-3 mt-10 max-w-xs w-xs grid grid-cols-1 cursor-default select-none rounded bg-gray-400 dark:bg-gray-900 shadow-lg">
+                                <div class="z-50 p-3 mx-3 mt-10 lg:max-w-lg w-xs grid grid-cols-1 cursor-default select-none rounded bg-gray-400 dark:bg-gray-900 shadow-lg">
                                     <div class="font-semibold text-xl mb-2 ml-2 text-gray-900 dark:text-white">Mind Core</div>
                                     <div class="flex">
                                         <a href="https://mindcore-1f680.web.app/">
@@ -157,22 +164,22 @@ const Project = () => {
                                         src="https://i.ibb.co/Swhv0J2/mindcore.png" alt=''>
                                     </img>
                                     <Link to='/details'>
-                                        <button style={{ border: '2px solid #FFB400 ' }} className='rounded-full lg:my-5 m-auto lg:ml-2   lg:w-2/3 w-1/3  h-12 hover:bg-yellow-400 hover:text-black hover:scale-105 transition transform duration-500 text-white lg:text-xl font-semibold my-3'>See Deatils
+                                        <button style={{ border: '2px solid #FFB400 ' }} className='rounded-full lg:my-5 m-auto lg:ml-2   lg:w-2/3 w-3/4  h-12 hover:bg-yellow-400 hover:text-black hover:scale-105 transition transform duration-500 text-white lg:text-xl font-semibold my-3'>See Deatils
                                         </button>
                                     </Link>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <hr />
+                    {/* <hr /> */}
                     <div data-aos="fade-right"
                         data-aos-offset="200"
                         data-aos-delay="50"
                         data-aos-duration="1000"
                         data-aos-easing="ease-in">
-                        <div class="flex  antialiased ">
+                        <div class="flex my-8  antialiased ">
                             <div class="relative m-auto">
-                                <div class="z-50 p-3 mt-10 max-w-xs w-xs grid grid-cols-1 cursor-default select-none rounded bg-gray-400 dark:bg-gray-900 shadow-lg">
+                                <div class="z-50 p-3 mx-3 mt-10 lg:max-w-lg w-xs grid grid-cols-1 cursor-default select-none rounded bg-gray-400 dark:bg-gray-900 shadow-lg">
                                     <div class="font-semibold text-xl mb-2 ml-2 text-gray-900 dark:text-white">Click69</div>
                                     <div class="flex">
                                         <a href="https://github.com/Rabi-Mezan/click69-click-with-us">
@@ -205,19 +212,19 @@ const Project = () => {
                                         src="https://i.ibb.co/hBJDvk6/click69.png" alt=''>
                                     </img>
                                     <Link to='/details'>
-                                        <button style={{ border: '2px solid #FFB400 ' }} className='rounded-full lg:my-5 m-auto lg:ml-2   lg:w-2/3 w-1/3  h-12 hover:bg-yellow-400 hover:text-black hover:scale-105 transition transform duration-500 text-white lg:text-xl font-semibold my-3'>See Deatils
+                                        <button style={{ border: '2px solid #FFB400 ' }} className='rounded-full lg:my-5 m-auto lg:ml-2   lg:w-2/3 w-3/4  h-12 hover:bg-yellow-400 hover:text-black hover:scale-105 transition transform duration-500 text-white lg:text-xl font-semibold my-3'>See Deatils
                                         </button>
                                     </Link>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <hr />
+                    {/* <hr /> */}
 
 
                 </div>
 
-                <div
+                {/* <div
                     className=' flex mb-5 order-first lg:order-last  flex-col justify-around items-center '>
                     <img className='w-16 h-16 flex  lg:ml-auto ' src={logo} alt="" />
                     <div className='flex lg:flex-col flex-row'>
@@ -237,7 +244,7 @@ const Project = () => {
                             <i class="fas fa-envelope flex items-center justify-center mt-5  bg-yellow-400 w-10  h-10 p-2 rounded-full hover:scale-105 transition transform duration-500 hover:bg-green-400 hover:text-white"></i>
                         </Link>
                     </div>
-                </div>
+                </div> */}
             </div>
         </div >
     );

@@ -22,12 +22,19 @@ const Contact = () => {
     };
 
     return (
-        <div style={{ backgroundColor: '#111111' }}>
-            <h1 className='lg:text-5xl text-2xl text-center font-bold text-white py-10'>GET IN <span style={{ color: '#FFB400' }} className=' font-extrabold text-white'>TOUCH</span>
+        <div id='contact' style={{ backgroundColor: '#111111' }}>
+            <h1
+                data-aos="fade-out"
+                data-aos-offset="200"
+                data-aos-delay="50"
+                data-aos-duration="1000"
+                data-aos-easing="ease-in"
+
+                className='lg:bg-gray-500 lg:mx-40 lg:text-5xl text-2xl text-center font-bold text-white py-5'>GET IN <span style={{ color: '#FFB400' }} className=' font-extrabold text-white'>TOUCH</span>
             </h1>
-            <div className='contact-page  min-h-screen text-white text-left'>
-                <div style={{ width: '350px' }} className='text-left lg:w-auto w-full lg:p-0 p-5 '>
-                    <h1 className='lg:text-3xl font-bold mb-3'>FEEL FREE TO CONTACT !</h1>
+            <div className='contact-page lg:-mt-16  min-h-screen text-white text-left'>
+                <div style={{ width: '400px' }} className='text-left lg:w-full w-full lg:p-0 p-5 '>
+                    <h1 style={{ color: '#FFB400' }} className='lg:text-3xl font-bold mb-3'>FEEL FREE TO CONTACT !</h1>
                     <p className='text-sm'>Feel free to get in touch with me. I am always open to discussing new projects, creative ideas or opportunities to be part of your visions.</p>
                     <div>
                         <div className='flex items-center my-4'>
@@ -69,11 +76,11 @@ const Contact = () => {
                     </div>
                 </div>
 
-                <form ref={form} onSubmit={sendEmail} className='flex flex-col justify-center lg:px-0 px-2 '>
+                <form ref={form} onSubmit={sendEmail} className='lg:-ml-24 flex w-100 flex-col justify-center lg:px-0 px-2 '>
                     <div className='flex flex-col lg:p-0 p-5 '>
                         <div className='flex justify-center items-center w-full '>
-                            <input name="user_name" placeholder='Your Name' className='w-1/2  lg:h-14 h-10 rounded-full  hover:border-2 border-yellow-400 mr-2 p-4 bg-gray-600' type="text" />
-                            <input name="user_email" placeholder='Your Email' className='w-1/2  lg:h-14 h-10 rounded-full  hover:border-2 bg-gray-600  border-yellow-400 lg:p-4 px-5 text' type="email" />
+                            <input name="user_name" placeholder='Your Name' className='w-1/2  lg:h-14 h-10  rounded-lg  hover:border-2 border-yellow-400 mr-2 p-4 bg-gray-600' type="text" />
+                            <input name="user_email" placeholder='Your Email' className='w-1/2  lg:h-14 h-10  rounded-lg  hover:border-2 bg-gray-600  border-yellow-400 lg:p-4 px-5 text' type="email" />
                         </div>
                         <textarea name="message" placeholder='Your Message' className='w-full  m-auto hover:border-2  rounded-lg my-5 bg-gray-600  p-4' id="" cols="10" rows="5"></textarea>
                     </div>
@@ -83,7 +90,7 @@ const Contact = () => {
                     </div>
                 </form>
 
-                <div
+                {/* <div
                     className=' flex lg:order-last my-5 order-first  flex-col justify-around items-center  lg:-mt-60'>
                     <img className='w-16 h-16 flex  lg:ml-auto ' src={logo} alt="" />
                     <div className='flex lg:flex-col flex-row text-black'>
@@ -103,7 +110,7 @@ const Contact = () => {
                             <i class="fas fa-envelope flex items-center justify-center mt-5  bg-yellow-400 w-10  h-10 p-2 rounded-full hover:scale-105 transition transform duration-500 hover:bg-green-400 hover:text-white"></i>
                         </Link>
                     </div>
-                </div>
+                </div> */}
 
             </div>
         </div >
