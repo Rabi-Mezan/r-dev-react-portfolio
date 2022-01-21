@@ -53,15 +53,15 @@ const About = () => {
                 data-aos-duration="1000"
                 data-aos-easing="ease-in"
 
-                className='lg:text-5xl text-2xl text-center font-bold text-white lg:bg-gray-500 lg:mx-40 py-10'>ABOUT <span style={{ color: '#FFB400' }} className='font-extrabold text-white'>ME</span>
+                className='lg:text-5xl  text-2xl text-center font-bold text-white lg:bg-gray-500 lg:mx-40 py-10'>ABOUT <span style={{ color: '#FFB400' }} className='font-extrabold text-white'>ME</span>
             </h1>
             <div className='flex flex-col lg:flex-row lg:items-start items-center justify-around'>
                 <div className='w-full px-3'>
                     <div className='w-full px-5 lg:pl-36 m-auto text-left '>
                         <h1 className='lg:text-2xl mb-2 font-bold text-white py-10'>MYSELF <br /> <span style={{ color: '#FFB400' }} className=' lg:text-5xl text-2xl font-extrabold text-white'> RABIUL ISLAM</span> </h1>
                         <p className='text-sm text-white -mt-8'>FRONTEND DEVELOPER , UI DESIGNER</p>
-                        <p className='text-sm text-white lg:w-2/3 my-2 '>I'm a student of Computer science and Engineering and pursuing my BSc degree at Daffodil International University. I want to become a full-stack web developer</p>
-                        <a className='my-1 ' href="https://drive.google.com/file/d/1QX5gJPq1JUjYlb21SF4tEPSk0XQyP-o7/view?usp=sharing" target='_blank' rel="noreferrer">
+                        <p className='text-sm text-white lg:w-2/3 my-2 '>Recently I have completed my graduation in Computer Science from Daffodil International University. I love web technologies and currently working as a frontend web developer. I am eager to be challenged in order to grow and further improve my development skills.</p>
+                        <a className='my-1 ' href="https://drive.google.com/file/d/1wK12-VRo1zGa0aInKo88zNNWIrgw7Up1/view?usp=sharing" target='_blank' rel="noreferrer">
                             <button style={{ border: '2px solid #FFB400 ' }} className='rounded-full my-5  lg:-ml-2   lg:w-1/3 w-60  h-12 hover:bg-yellow-400 hover:text-black hover:scale-105 transition transform duration-500 text-white text-xl font-semibold flex  justify-between px-2 items-center'>My Resume <span style={{ color: 'black' }}><i class="fas fa-arrow-right bg-yellow-400  w-10  h-10 p-2 rounded-full"></i></span>
                             </button>
                         </a>
@@ -128,7 +128,7 @@ const About = () => {
                         data-aos-easing="ease-in"
                         className='flex mb-16 flex-col justify-around items-center lg:w-full'>
                         <h1 style={{ color: '#FFB400' }} className=' lg:text-5xl text-2xl  mt-20 font-extrabold text-white'>MY SKILLS</h1>
-                        <div className='grid lg:grid-cols-2 grid-cols-1 '>
+                        <div className='lg:w-3/4 grid lg:grid-cols-2 grid-col-1 gap-4 m-auto'>
 
                             <div className='lg:p-10 p-5 ml-0'>
                                 <h1 className='lg:text-xl text-sm text-white -mb-5 text-left'>HTML</h1>
@@ -150,7 +150,7 @@ const About = () => {
 
                                 <h1 className='lg:text-xl text-sm text-white -mb-5 text-left'>CSS</h1>
                                 <ProgressBar
-                                    width="320px"
+                                    width="350px"
                                     height="15px"
                                     rect
                                     fontColor="gray"
@@ -166,7 +166,7 @@ const About = () => {
                             <div className='lg:p-10 p-5  -mt-10'>
                                 <h1 className='lg:text-xl text-sm text-white -mb-5 text-left'>BOOTSTRAP</h1>
                                 <ProgressBar
-                                    width="320px"
+                                    width="350px"
                                     height="15px"
                                     rect
                                     fontColor="gray"
@@ -182,7 +182,7 @@ const About = () => {
                             <div className='lg:p-10 p-5  -mt-10'>
                                 <h1 className='lg:text-xl text-sm text-white -mb-5 text-left'>TAILWIND</h1>
                                 <ProgressBar
-                                    width="320px"
+                                    width="350px"
                                     height="15px"
                                     rect
                                     fontColor="gray"
@@ -198,7 +198,7 @@ const About = () => {
                             <div className='lg:p-10 p-5  -mt-10'>
                                 <h1 className='lg:text-xl text-sm text-white -mb-5 text-left'>REACT JS</h1>
                                 <ProgressBar
-                                    width="320px"
+                                    width="350px"
                                     height="15px"
                                     rect
                                     fontColor="gray"
@@ -214,7 +214,7 @@ const About = () => {
                             <div className='lg:p-10 p-5  -mt-10'>
                                 <h1 className='lg:text-xl text-sm text-white -mb-5 text-left'>NODE JS</h1>
                                 <ProgressBar
-                                    width="320px"
+                                    width="350px"
                                     height="15px"
                                     rect
                                     fontColor="gray"
@@ -230,7 +230,7 @@ const About = () => {
                             <div className='lg:p-10 p-5 text-sm -mt-10'>
                                 <h1 className='lg:text-xl text-white -mb-5 text-left'>MONGODB</h1>
                                 <ProgressBar
-                                    width="320px"
+                                    width="350px"
                                     height="15px"
                                     rect
                                     fontColor="gray"
@@ -247,7 +247,7 @@ const About = () => {
 
                         </div>
                     </div>
-                    <div
+                    {/* <div
 
                         className='flex  mb-16 flex-col justify-center items-center lg:w-full   '>
 
@@ -318,7 +318,7 @@ const About = () => {
                                 icon={<i class=" mt-3 lg:text-2xl fas fa-graduation-cap"></i>}
                             />
                         </VerticalTimeline>
-                    </div>
+                    </div> */}
                 </div>
                 {/* <div
                     className='flex flex-col order-first lg:order-last mb-5  justify-around items-center text-black '>

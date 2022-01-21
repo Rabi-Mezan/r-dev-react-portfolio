@@ -30,10 +30,10 @@ const Contact = () => {
                 data-aos-duration="1000"
                 data-aos-easing="ease-in"
 
-                className='lg:bg-gray-500 lg:mx-40 lg:text-5xl text-2xl text-center font-bold text-white py-5'>GET IN <span style={{ color: '#FFB400' }} className=' font-extrabold text-white'>TOUCH</span>
+                className='lg:bg-gray-500 lg:mx-40 lg:text-5xl text-2xl text-center font-bold text-white  py-8'>GET IN <span style={{ color: '#FFB400' }} className=' font-extrabold text-white'>TOUCH</span>
             </h1>
-            <div className='contact-page lg:-mt-16  min-h-screen text-white text-left'>
-                <div style={{ width: '400px' }} className='text-left lg:w-full w-full lg:p-0 p-5 '>
+            <div className='contact-page lg:-mt-16 lg:mx-20  min-h-screen text-white text-left'>
+                <div style={{ width: '400px' }} className='text-left lg:w-full w-full lg:p-0 p-8'>
                     <h1 style={{ color: '#FFB400' }} className='lg:text-3xl font-bold mb-3'>FEEL FREE TO CONTACT !</h1>
                     <p className='text-sm'>Feel free to get in touch with me. I am always open to discussing new projects, creative ideas or opportunities to be part of your visions.</p>
                     <div>
@@ -41,7 +41,7 @@ const Contact = () => {
                             <i class="fas fa-envelope text-4xl text-yellow-400 mr-3"></i>
                             <div>
                                 <h1>MAIL ME</h1>
-                                <p className='font-semibold'>ravimezan@gmail.com</p>
+                                <p className='font-semibold'>rabiulislam.dev@gmail.com</p>
                             </div>
                         </div>
                         <div className='flex items-center my-4'>
@@ -79,10 +79,10 @@ const Contact = () => {
                 <form ref={form} onSubmit={sendEmail} className='lg:-ml-24 flex w-100 flex-col justify-center lg:px-0 px-2 '>
                     <div className='flex flex-col lg:p-0 p-5 '>
                         <div className='flex justify-center items-center w-full '>
-                            <input name="user_name" placeholder='Your Name' className='w-1/2  lg:h-14 h-10  rounded-lg  hover:border-2 border-yellow-400 mr-2 p-4 bg-gray-600' type="text" />
-                            <input name="user_email" placeholder='Your Email' className='w-1/2  lg:h-14 h-10  rounded-lg  hover:border-2 bg-gray-600  border-yellow-400 lg:p-4 px-5 text' type="email" />
+                            <input required name="user_name" placeholder='Your Name' className='w-1/2  lg:h-14 h-10  rounded-lg  hover:border-2 border-yellow-400 mr-2 p-4 bg-gray-600' type="text" />
+                            <input required name="user_email" placeholder='Your Email' className='w-1/2  lg:h-14 h-10  rounded-lg  hover:border-2 bg-gray-600  border-yellow-400 lg:p-4 px-5 text' type="email" />
                         </div>
-                        <textarea name="message" placeholder='Your Message' className='w-full  m-auto hover:border-2  rounded-lg my-5 bg-gray-600  p-4' id="" cols="10" rows="5"></textarea>
+                        <textarea required name="message" placeholder='Your Message' className='w-full  m-auto hover:border-2  rounded-lg my-5 bg-gray-600  p-4' id="" cols="10" rows="5"></textarea>
                     </div>
                     <div className=' m-auto w-full '>
 

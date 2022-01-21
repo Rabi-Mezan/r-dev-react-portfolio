@@ -28,7 +28,7 @@ const Project = () => {
                         data-aos-duration="1000"
                         data-aos-easing="ease-in"
                     >
-                        <div class="flex my-8 antialiased">
+                        <div class="flex my-6 antialiased">
                             <div class="relative m-auto">
                                 <div class="z-50 p-3 mx-3 mt-10 lg:max-w-lg w-xs grid grid-cols-1 cursor-default select-none rounded bg-gray-400 dark:bg-gray-900 shadow-lg">
                                     <div class="font-semibold text-xl mb-2 ml-2 text-gray-900 dark:text-white">Heaven Trip</div>
@@ -79,7 +79,7 @@ const Project = () => {
                         data-aos-duration="1000"
                         data-aos-easing="ease-in"
                     >
-                        <div class="flex my-8  antialiased">
+                        <div class="flex my-6  antialiased">
                             <div class="relative m-auto">
                                 <div class="z-50 p-3 mx-3 mt-10 lg:max-w-lg w-xs grid grid-cols-1 cursor-default select-none rounded bg-gray-400 dark:bg-gray-900 shadow-lg">
                                     <div class="font-semibold text-xl mb-2 ml-2 text-gray-900 dark:text-white">Flash Corner</div>
@@ -129,7 +129,7 @@ const Project = () => {
                         data-aos-delay="50"
                         data-aos-duration="1000"
                         data-aos-easing="ease-in">
-                        <div class="flex my-8 antialiased">
+                        <div class="flex my-6 antialiased">
                             <div class="relative m-auto">
                                 <div class="z-50 p-3 mx-3 mt-10 lg:max-w-lg w-xs grid grid-cols-1 cursor-default select-none rounded bg-gray-400 dark:bg-gray-900 shadow-lg">
                                     <div class="font-semibold text-xl mb-2 ml-2 text-gray-900 dark:text-white">Mind Core</div>
@@ -177,7 +177,7 @@ const Project = () => {
                         data-aos-delay="50"
                         data-aos-duration="1000"
                         data-aos-easing="ease-in">
-                        <div class="flex my-8  antialiased ">
+                        <div class="flex my-6  antialiased ">
                             <div class="relative m-auto">
                                 <div class="z-50 p-3 mx-3 mt-10 lg:max-w-lg w-xs grid grid-cols-1 cursor-default select-none rounded bg-gray-400 dark:bg-gray-900 shadow-lg">
                                     <div class="font-semibold text-xl mb-2 ml-2 text-gray-900 dark:text-white">Click69</div>
